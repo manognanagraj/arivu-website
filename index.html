@@ -1,95 +1,350 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="ARIVU - Shaping Minds. Strengthening Futures.">
 
     <title>ARIVU | Shaping Minds. Strengthening Futures.</title>
 
-    <meta name="description"
-        content="ARIVU is an awareness-driven educational initiative empowering individuals through education, emotional well-being and life skills.">
-
     <!-- Google Fonts -->
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
-
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap"
-        rel="stylesheet">
-
-    <!-- Bootstrap -->
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Font Awesome -->
-
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-
-    <!-- AOS Animation -->
-
-    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+          rel="stylesheet">
 
     <!-- CSS -->
-
     <link rel="stylesheet" href="style.css">
-
 </head>
 
 <body>
 
+<!-- =====================================================
+     NAVIGATION
+===================================================== -->
+
+<header class="navbar" id="navbar">
+
+    <div class="nav-container">
+
+        <a href="#home" class="logo">
+            ARIVU
+        </a>
+
+        <nav class="nav-menu" id="navMenu">
+
+            <a href="#about">Who We Are</a>
+
+            <a href="#founder">Founder</a>
+
+            <a href="#philosophy">Philosophy</a>
+
+            <a href="#impact">Impact</a>
+
+            <a href="#contact">Contact</a>
+
+        </nav>
+
+        <!-- Mobile menu button -->
+
+        <button
+            class="menu-toggle"
+            id="menuToggle"
+            aria-label="Open navigation menu">
+
+            <span></span>
+            <span></span>
+            <span></span>
+
+        </button>
+
+    </div>
+
+</header>
 
 
-    <!--================ NAVBAR ================-->
+<!-- =====================================================
+     MAIN CONTENT
+===================================================== -->
 
-    <nav class="navbar navbar-expand-lg fixed-top">
+<main>
 
-        <div class="container">
 
-            <a class="navbar-brand" href="#">ARIVU</a>
+<!-- =====================================================
+     HERO
+===================================================== -->
 
-            <button class="navbar-toggler" data-bs-toggle="collapse"
-                data-bs-target="#menu">
+<section class="hero section-dark" id="home">
 
-                <span class="navbar-toggler-icon"></span>
+    <div class="hero-content">
 
-            </button>
+        <p class="eyebrow">
+            EDUCATION · AWARENESS · WELL-BEING
+        </p>
 
-            <div class="collapse navbar-collapse" id="menu">
+        <h1>
+            ARIVU
+        </h1>
 
-                <ul class="navbar-nav ms-auto">
+        <h2>
+            Shaping Minds. Strengthening Futures.
+        </h2>
 
-                    <li class="nav-item">
+        <div class="gold-line"></div>
 
-                        <a class="nav-link" href="#about">Who We Are</a>
+        <p class="hero-description">
 
+            An awareness-driven education initiative empowering
+            individuals with accessible knowledge, emotional
+            well-being, and practical life skills through
+            psychology-backed learning experiences.
+
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="#contact" class="btn btn-gold">
+                Partner With Us
+            </a>
+
+            <a href="#impact" class="btn btn-outline">
+                Explore Our Work
+            </a>
+
+        </div>
+
+        <a href="#about" class="scroll-down">
+            ↓
+        </a>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     WHO WE ARE
+===================================================== -->
+
+<section class="about section-light" id="about">
+
+    <div class="section-container about-grid">
+
+        <div class="about-text">
+
+            <p class="section-label">
+                SECTION 01
+            </p>
+
+            <h2>
+                Who We Are
+            </h2>
+
+            <h3>
+                Empowering Every Generation Through Knowledge &
+                Well-being
+            </h3>
+
+            <div class="small-line"></div>
+
+            <p>
+                ARIVU is an awareness-driven educational initiative
+                committed to making mental health, emotional
+                well-being, and life skills accessible to everyone.
+                Through evidence-based workshops, meaningful
+                conversations, and experiential learning, ARIVU
+                empowers individuals to build resilience, develop
+                self-awareness, strengthen relationships, and create
+                emotionally healthier communities.
+            </p>
+
+        </div>
+
+
+        <div class="about-image">
+
+            <div class="logo-card">
+
+                <img
+                    src="assets/arivu-logo.png"
+                    alt="ARIVU Logo">
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     FOUNDER
+===================================================== -->
+
+<section class="founder section-dark" id="founder">
+
+    <div class="section-container founder-grid">
+
+        <div class="founder-image">
+
+            <img
+                src="assets/founder.jpg"
+                alt="Founder of ARIVU">
+
+            <div class="image-caption">
+
+                <strong>Rashitha Nagraj</strong>
+
+                <span>
+                    Founder, ARIVU
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <div class="founder-content">
+
+            <p class="section-label">
+                SECTION 02 · FOUNDER
+            </p>
+
+            <h2>
+                The Vision Behind ARIVU
+            </h2>
+
+            <h3>
+                Leading Change Through Compassionate Education
+            </h3>
+
+            <div class="small-line"></div>
+
+            <p>
+                Rashitha Nagraj is a Counselling Psychologist,
+                Mental Health Coach, and Special Educator dedicated
+                to making mental health education practical,
+                accessible, and impactful. With experience working
+                closely with children, adolescents, parents, and
+                educators, she combines psychology, life skills,
+                and holistic approaches to help individuals build
+                confidence, resilience, and emotional well-being.
+            </p>
+
+            <blockquote>
+                "Awareness is the first step toward meaningful change."
+            </blockquote>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     PHILOSOPHY
+===================================================== -->
+
+<section class="philosophy section-light" id="philosophy">
+
+    <div class="section-container">
+
+        <div class="section-heading centered">
+
+            <p class="section-label">
+                SECTION 03
+            </p>
+
+            <h2>
+                Our Philosophy
+            </h2>
+
+            <p>
+                What We Believe Shapes Every Conversation
+            </p>
+
+        </div>
+
+
+        <div class="philosophy-grid">
+
+
+            <!-- BELIEF -->
+
+            <div class="belief-card dark-card">
+
+                <div class="icon-circle">
+                    💡
+                </div>
+
+                <h3>
+                    Our Belief
+                </h3>
+
+                <p>
+                    We believe that awareness should begin early,
+                    conversations should be safe, and education
+                    should prepare people not only for careers but
+                    for life. Emotional intelligence, empathy,
+                    resilience, and informed decision-making are
+                    essential life skills.
+                </p>
+
+            </div>
+
+
+            <!-- WHY ARIVU -->
+
+            <div class="belief-card cream-card">
+
+                <div class="icon-circle light-icon">
+                    ✨
+                </div>
+
+                <h3>
+                    Why ARIVU Stands Apart
+                </h3>
+
+                <ul class="feature-list">
+
+                    <li>
+                        <span>✦</span>
+                        Psychology-backed learning
                     </li>
 
-                    <li class="nav-item">
-
-                        <a class="nav-link" href="#founder">Founder</a>
-
+                    <li>
+                        <span>♧</span>
+                        Age-appropriate and culturally relevant
                     </li>
 
-                    <li class="nav-item">
-
-                        <a class="nav-link" href="#philosophy">Philosophy</a>
-
+                    <li>
+                        <span>✦</span>
+                        Interactive experiences instead of lectures
                     </li>
 
-                    <li class="nav-item">
-
-                        <a class="nav-link" href="#impact">Impact</a>
-
+                    <li>
+                        <span>◯</span>
+                        Safe and judgment-free conversations
                     </li>
 
-                    <li class="nav-item">
+                    <li>
+                        <span>♡</span>
+                        Prevention-focused approach
+                    </li>
 
-                        <a class="nav-link" href="#contact">Contact</a>
-
+                    <li>
+                        <span>▣</span>
+                        Customized programs for every institution
                     </li>
 
                 </ul>
@@ -98,427 +353,494 @@
 
         </div>
 
-    </nav>
+    </div>
 
+</section>
 
 
 
+<!-- =====================================================
+     IMPACT
+===================================================== -->
 
-    <!--================ HERO ================-->
+<section class="impact section-dark" id="impact">
 
-    <section id="hero">
+    <div class="section-container">
 
-        <div class="container text-center">
+        <div class="section-heading centered">
 
-            <p class="hero-small">
-
-                EDUCATION • AWARENESS • WELL-BEING
-
-            </p>
-
-            <h1>ARIVU</h1>
-
-            <h3>
-
-                Shaping Minds.
-
-                Strengthening Futures.
-
-            </h3>
-
-            <p class="hero-text">
-
-                An awareness-driven educational initiative empowering
-
-                individuals through accessible knowledge,
-
-                emotional well-being and practical life skills.
-
-            </p>
-
-            <div class="hero-buttons">
-
-                <a href="#contact" class="btn btn-gold">
-
-                    Partner With Us
-
-                </a>
-
-                <a href="#impact" class="btn btn-outline-light">
-
-                    Explore Our Work
-
-                </a>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-
-
-
-    <!--================ WHO WE ARE ================-->
-
-    <section id="about">
-
-        <div class="container">
-
-            <div class="row align-items-center">
-
-                <div class="col-lg-6">
-
-                    <span class="section-number">
-
-                        SECTION 01
-
-                    </span>
-
-                    <h2>Who We Are</h2>
-
-                    <p class="section-subtitle">
-
-                        Empowering Every Generation Through Knowledge & Well-being
-
-                    </p>
-
-                    <p>
-
-                        ARIVU is an awareness-driven educational initiative
-                        committed to making mental health, emotional well-being
-                        and life skills accessible to everyone.
-
-                    </p>
-
-                </div>
-
-                <div class="col-lg-6 text-center">
-
-                    <div class="logo-placeholder">
-
-                        LOGO
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-
-
-
-    <!--================ FOUNDER ================-->
-
-    <section id="founder">
-
-        <div class="container">
-
-            <div class="row align-items-center">
-
-                <div class="col-lg-5">
-
-                    <div class="founder-image">
-
-                        Founder Image
-
-                    </div>
-
-                </div>
-
-                <div class="col-lg-7">
-
-                    <span class="section-number">
-
-                        SECTION 02
-
-                    </span>
-
-                    <h2>The Vision Behind ARIVU</h2>
-
-                    <p class="section-subtitle">
-
-                        Leading Change Through Compassionate Education
-
-                    </p>
-
-                    <p>
-
-                        Founder description goes here.
-
-                    </p>
-
-                    <blockquote>
-
-                        "Awareness is the first step toward meaningful change."
-
-                    </blockquote>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-
-
-
-    <!--================ PHILOSOPHY ================-->
-
-    <section id="philosophy">
-
-        <div class="container">
-
-            <span class="section-number">
-
-                SECTION 03
-
-            </span>
-
-            <h2 class="text-center">
-
-                Our Philosophy
-
-            </h2>
-
-            <p class="section-subtitle text-center">
-
-                What We Believe Shapes Every Conversation
-
-            </p>
-
-            <div class="row">
-
-                <div class="col-lg-6">
-
-                    <div class="belief-card">
-
-                        <h3>Our Belief</h3>
-
-                    </div>
-
-                </div>
-
-                <div class="col-lg-6">
-
-                    <div class="belief-card light">
-
-                        <h3>Why ARIVU Stands Apart</h3>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-
-
-
-    <!--================ IMPACT ================-->
-
-    <section id="impact">
-
-        <div class="container">
-
-            <span class="section-number">
-
+            <p class="section-label">
                 SECTION 04
-
-            </span>
+            </p>
 
             <h2>
-
                 How We Create Impact
-
             </h2>
 
-            <p class="section-subtitle">
-
+            <p>
                 Designed for Every Learning Community
-
             </p>
 
-            <div class="row">
+        </div>
 
-                <div class="col-lg-3">
 
-                    <div class="impact-card">
+        <div class="impact-grid">
 
-                        Schools
 
-                    </div>
+            <!-- SCHOOLS -->
 
+            <div class="impact-card">
+
+                <div class="card-icon">
+                    ▣
                 </div>
 
-                <div class="col-lg-3">
+                <h3>
+                    Schools
+                </h3>
 
-                    <div class="impact-card">
+                <ul>
+                    <li>Mental health literacy</li>
+                    <li>Emotional well-being</li>
+                    <li>Life skills</li>
+                    <li>Body awareness</li>
+                    <li>Peer relationships</li>
+                </ul>
 
-                        Higher Education
+            </div>
 
-                    </div>
 
+            <!-- HIGHER EDUCATION -->
+
+            <div class="impact-card">
+
+                <div class="card-icon">
+                    ▤
                 </div>
 
-                <div class="col-lg-3">
+                <h3>
+                    Higher Education
+                </h3>
 
-                    <div class="impact-card">
+                <ul>
+                    <li>Stress management</li>
+                    <li>Identity</li>
+                    <li>Healthy relationships</li>
+                    <li>Career confidence</li>
+                    <li>Emotional resilience</li>
+                </ul>
 
-                        Parents
+            </div>
 
-                    </div>
 
+            <!-- PARENTS -->
+
+            <div class="impact-card">
+
+                <div class="card-icon">
+                    ♧
                 </div>
 
-                <div class="col-lg-3">
+                <h3>
+                    Parents & Families
+                </h3>
 
-                    <div class="impact-card">
+                <ul>
+                    <li>Modern parenting</li>
+                    <li>Communication</li>
+                    <li>Boundaries</li>
+                    <li>Emotional safety</li>
+                    <li>Understanding today's generation</li>
+                </ul>
 
-                        Educators
+            </div>
 
-                    </div>
 
+            <!-- EDUCATORS -->
+
+            <div class="impact-card">
+
+                <div class="card-icon">
+                    ▥
+                </div>
+
+                <h3>
+                    Educators & Professionals
+                </h3>
+
+                <ul>
+                    <li>Trauma-informed practices</li>
+                    <li>Student well-being</li>
+                    <li>Inclusive classrooms</li>
+                    <li>Communication strategies</li>
+                    <li>Capacity building</li>
+                </ul>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- COLLABORATION -->
+
+        <div class="collaboration-card">
+
+            <h3>
+                Collaboration That Lasts
+            </h3>
+
+            <p>
+                ARIVU believes in long-term partnerships rather
+                than one-time sessions.
+            </p>
+
+
+            <div class="steps">
+
+                <div class="step">
+                    <span>1</span>
+                    <p>Orientation Programs</p>
+                </div>
+
+                <div class="step">
+                    <span>2</span>
+                    <p>Workshop Series</p>
+                </div>
+
+                <div class="step">
+                    <span>3</span>
+                    <p>Teacher Development</p>
+                </div>
+
+                <div class="step">
+                    <span>4</span>
+                    <p>Awareness Campaigns</p>
+                </div>
+
+                <div class="step">
+                    <span>5</span>
+                    <p>Follow-up Resources</p>
                 </div>
 
             </div>
 
         </div>
 
-    </section>
 
 
+        <!-- WHY ORGANISATIONS -->
 
+        <div class="collaboration-card">
 
+            <h3>
+                Why Organisations Choose ARIVU
+            </h3>
 
-    <!--================ CONTACT ================-->
+            <div class="reasons">
 
-    <section id="contact">
+                <span>✓ Psychology-backed framework</span>
 
-        <div class="container">
+                <span>✓ Evidence-based content</span>
 
-            <div class="row">
+                <span>✓ Customized modules</span>
 
-                <div class="col-lg-5">
+                <span>✓ Holistic education approach</span>
 
-                    <h2>
+                <span>✓ Long-term institutional support</span>
 
-                        Let's Build Healthier Generations Together
-
-                    </h2>
-
-                    <p>
-
-                        Connect. Collaborate. Create Change.
-
-                    </p>
-
-                </div>
-
-                <div class="col-lg-7">
-
-                    <form>
-
-                        <input class="form-control mb-3"
-                            placeholder="Name">
-
-                        <input class="form-control mb-3"
-                            placeholder="Email">
-
-                        <input class="form-control mb-3"
-                            placeholder="Organisation">
-
-                        <textarea class="form-control mb-3"
-                            rows="6"
-                            placeholder="Message"></textarea>
-
-                        <button class="btn btn-gold">
-
-                            Start the Conversation
-
-                        </button>
-
-                    </form>
-
-                </div>
+                <span>✓ Supports holistic education goals</span>
 
             </div>
 
         </div>
 
-    </section>
+    </div>
+
+</section>
 
 
 
+<!-- =====================================================
+     MEANINGFUL CHANGE
+===================================================== -->
 
+<section class="meaning section-light">
 
-    <!--================ FOOTER ================-->
+    <div class="section-container">
 
-    <footer>
+        <div class="section-heading centered">
 
-        <div class="container">
-
-            <h2>ARIVU</h2>
-
-            <p>
-
-                Shaping Minds.
-
-                Strengthening Futures.
-
+            <p class="section-label">
+                SECTION 05
             </p>
 
+            <h2>
+                Creating Meaningful Change
+            </h2>
+
             <p>
-
-                © 2026 ARIVU. All Rights Reserved.
-
+                The Difference We Aim to Make
             </p>
 
         </div>
 
-    </footer>
+
+        <div class="meaning-grid">
+
+
+            <div class="meaning-card">
+
+                <div class="meaning-icon">
+                    ♧
+                </div>
+
+                <p>
+                    Emotionally healthier learning environments
+                </p>
+
+            </div>
+
+
+            <div class="meaning-card">
+
+                <div class="meaning-icon">
+                    ◇
+                </div>
+
+                <p>
+                    Reduced stigma around sensitive conversations
+                </p>
+
+            </div>
+
+
+            <div class="meaning-card">
+
+                <div class="meaning-icon">
+                    ♧
+                </div>
+
+                <p>
+                    Stronger communication between families
+                    and educators
+                </p>
+
+            </div>
+
+
+            <div class="meaning-card">
+
+                <div class="meaning-icon">
+                    ✧
+                </div>
+
+                <p>
+                    Greater mental health awareness
+                </p>
+
+            </div>
+
+
+            <div class="meaning-card">
+
+                <div class="meaning-icon">
+                    ☺
+                </div>
+
+                <p>
+                    Confident and informed young people
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
 
 
 
+<!-- =====================================================
+     CONTACT
+===================================================== -->
+
+<section class="contact section-dark" id="contact">
+
+    <div class="section-container">
+
+        <div class="section-heading centered">
+
+            <p class="section-label">
+                SECTION 06
+            </p>
+
+            <h2>
+                Let's Build Healthier Generations Together
+            </h2>
+
+            <p>
+                Connect. Collaborate. Create Change.
+            </p>
+
+        </div>
 
 
-    <!-- Scroll To Top -->
-
-    <button id="scrollTop">
-
-        <i class="fa-solid fa-arrow-up"></i>
-
-    </button>
+        <div class="contact-grid">
 
 
+            <!-- CONTACT INFORMATION -->
+
+            <div class="contact-info">
+
+                <h3>
+                    Reach Out to Us
+                </h3>
+
+
+                <a href="tel:+919206774649"
+                   class="contact-item">
+
+                    <span class="contact-icon">
+                        ☎
+                    </span>
+
+                    <span>
+                        +91 9206774649
+                    </span>
+
+                </a>
+
+
+                <a href="mailto:ra.connects22@gmail.com"
+                   class="contact-item">
+
+                    <span class="contact-icon">
+                        ✉
+                    </span>
+
+                    <span>
+                        ra.connects22@gmail.com
+                    </span>
+
+                </a>
+
+
+                <a href="#"
+                   class="contact-item">
+
+                    <span class="contact-icon">
+                        ◎
+                    </span>
+
+                    <span>
+                        @arivu.wellbeing
+                    </span>
+
+                </a>
+
+            </div>
 
 
 
-    <!-- Bootstrap -->
+            <!-- CONTACT FORM -->
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+            <form class="contact-form" id="contactForm">
 
-    <!-- AOS -->
+                <div class="form-group">
 
-    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        placeholder="Name"
+                        required>
 
-    <!-- JavaScript -->
+                </div>
 
-    <script src="script.js"></script>
+
+                <div class="form-group">
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Email"
+                        required>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <input
+                        type="text"
+                        id="organisation"
+                        name="organisation"
+                        placeholder="Organisation">
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <textarea
+                        id="message"
+                        name="message"
+                        placeholder="Message"
+                        rows="5"
+                        required></textarea>
+
+                </div>
+
+
+                <button
+                    type="submit"
+                    class="conversation-button">
+
+                    Start the Conversation
+                    <span>→</span>
+
+                </button>
+
+                <p
+                    class="form-message"
+                    id="formMessage">
+                </p>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</section>
+
+</main>
+
+
+
+<!-- =====================================================
+     BACK TO TOP
+===================================================== -->
+
+<button
+    class="back-to-top"
+    id="backToTop"
+    aria-label="Back to top">
+
+    ↑
+
+</button>
+
+
+
+<!-- =====================================================
+     JAVASCRIPT
+===================================================== -->
+
+<script src="script.js"></script>
 
 </body>
-
 </html>
