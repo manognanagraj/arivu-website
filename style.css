@@ -1675,3 +1675,24 @@ blockquote {
     }
 
 }
+/* =====================================================
+   SCROLL ANIMATION
+===================================================== */
+
+.animate-on-scroll {
+
+    opacity: 0;
+
+    transform: translateY(25px);
+
+    transition:
+        opacity 0.7s ease,
+        transform 0.7s ease;
+}
+
+.animate-on-scroll.visible {
+
+    opacity: 1;
+
+    transform: translateY(0);
+}
