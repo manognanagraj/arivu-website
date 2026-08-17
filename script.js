@@ -159,3 +159,41 @@ animatedElements.forEach(element => {
     animationObserver.observe(element);
 
 });
+
+/* =====================================================
+CONTACT FORM → PHP BACKEND
+===================================================== */
+
+const contactForm = document.getElementById("contactForm");
+const formMessage = document.getElementById("formMessage");
+
+contactForm.addEventListener("submit", async function(event) {
+
+    event.preventDefault();
+
+    const formData = new FormData(contactForm);
+
+    try {
+
+        const response = await fetch(
+            "http://localhost/arivu_backend/contact.php",
+            {
+                method: "POST",
+                body: formData
+            }
+        );
+
+        const result = await response.text();
+
+        formMessage.textContent = result;
+
+        contactForm.reset();
+
+    } catch (error) {
+
+        formMessage.textContent =
+            "Something went wrong. Please try again.";
+
+    }
+
+});
