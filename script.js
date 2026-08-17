@@ -116,14 +116,17 @@ backToTop.addEventListener("click", () => {
    CONTACT FORM
 ===================================================== */
 
+/* =====================================================
+CONTACT FORM
+===================================================== */
+
 const contactForm =
     document.getElementById("contactForm");
 
 const formMessage =
     document.getElementById("formMessage");
 
-
-contactForm.addEventListener("submit", function(event) {
+contactForm.addEventListener("submit", async function(event) {
 
     event.preventDefault();
 
@@ -132,6 +135,9 @@ contactForm.addEventListener("submit", function(event) {
 
     const email =
         document.getElementById("email").value.trim();
+
+    const organisation =
+        document.getElementById("organisation").value.trim();
 
     const message =
         document.getElementById("message").value.trim();
@@ -148,9 +154,53 @@ contactForm.addEventListener("submit", function(event) {
 
 
     formMessage.textContent =
-        "Thank you! Your message has been received.";
+        "Sending...";
 
-    contactForm.reset();
+
+    const formData = new FormData();
+
+    formData.append("name", name);
+    formData.append("email", email);
+    formData.append("organisation", organisation);
+    formData.append("message", message);
+
+
+    try {
+
+        const response = await fetch(
+            "http://localhost/arivu_backend/contact.php",
+            {
+                method: "POST",
+                body: formData
+            }
+        );
+
+
+        const result = await response.text();
+
+
+        if (response.ok) {
+
+            formMessage.textContent = result;
+
+            contactForm.reset();
+
+        } else {
+
+            formMessage.textContent =
+                "Something went wrong. Please try again.";
+
+        }
+
+
+    } catch (error) {
+
+        formMessage.textContent =
+            "Unable to connect to the server.";
+
+        console.error(error);
+
+    }
 
 });
 
